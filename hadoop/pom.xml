@@ -21,5 +21,7 @@
     <module>hadoop-hdfs</module>
     <module>hadoop-mapreduce</module>
     <module>hadoop-mapreduce-tianqi</module>
+    <module>hadoop-hbase</module>
+    <module>hadoop-hive</module>
   </modules>
 </project>

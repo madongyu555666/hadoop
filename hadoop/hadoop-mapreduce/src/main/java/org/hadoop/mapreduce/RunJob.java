@@ -34,7 +34,7 @@ public class RunJob {
 			// 设置reduce方法输出value的类型
 			job.setOutputValueClass(IntWritable.class);
 			// 指定输入路径
-			FileInputFormat.addInputPath(job, new Path("/user/root/input/input/"));
+			FileInputFormat.addInputPath(job, new Path("/user/root/input/"));
 			// 指定输出路径（会自动创建）
 			Path outpath = new Path("/user/root/output/");
 			// 输出路径是MapReduce自动创建的，如果存在则需要先删除
