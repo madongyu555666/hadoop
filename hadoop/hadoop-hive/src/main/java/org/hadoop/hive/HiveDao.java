@@ -145,11 +145,11 @@ public class HiveDao {
 	public static void main(String[] args) {
 		HiveDao dao = new HiveDao();
 		dao.getConnection("120.78.181.181");
-		dao.createDatabase("mydb");
-		dao.dropTable("mydb.goods");
-		dao.createTable("create table mydb.goods(id int,name string) row format delimited fields terminated by '\t'");
-		dao.load("load data inpath 'input/goods.txt' into table mydb.goods");
-		dao.descTables("mydb.goods");
+		//dao.createDatabase("mydb");
+		//dao.dropTable("mydb.goods");
+		//dao.createTable("create table mydb.goods(id int,name string) row format delimited fields terminated by '\t'");
+		//dao.load("load data inpath 'input/goods.txt' into table mydb.goods");
+		//dao.descTables("mydb.goods");
 		ResultSet rs = dao.query("select * from mydb.goods");
 		try {
 			while (rs.next()) {
